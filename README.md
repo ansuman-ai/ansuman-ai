@@ -13,6 +13,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-awwnsuman-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/awwnsuman)
 [![Email](https://img.shields.io/badge/Email-ansumanmohanty2006%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ansumanmohanty2006@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-ansuman--ai-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ansuman-ai)
+<img src="https://komarev.com/ghpvc/?username=ansuman-ai&label=PROFILE+VIEWS&style=for-the-badge&color=00F2FE" alt="Profile Views" />
 
 </div>
 
@@ -48,6 +49,7 @@ class Developer:
 ![TypeScript](https://img.shields.io/badge/TypeScript-1f1f2e?style=for-the-badge&logo=typescript&logoColor=00F2FE)
 ![JavaScript](https://img.shields.io/badge/JavaScript-1f1f2e?style=for-the-badge&logo=javascript&logoColor=00F2FE)
 ![Dart](https://img.shields.io/badge/Dart-1f1f2e?style=for-the-badge&logo=dart&logoColor=00F2FE)
+![Kotlin](https://img.shields.io/badge/Kotlin-1f1f2e?style=for-the-badge&logo=kotlin&logoColor=00F2FE)
 ![Java](https://img.shields.io/badge/Java-1f1f2e?style=for-the-badge&logo=openjdk&logoColor=00F2FE)
 ![C++](https://img.shields.io/badge/C%2B%2B-1f1f2e?style=for-the-badge&logo=cplusplus&logoColor=00F2FE)
 ![HTML5](https://img.shields.io/badge/HTML5-1f1f2e?style=for-the-badge&logo=html5&logoColor=00F2FE)
@@ -56,6 +58,7 @@ class Developer:
 
 ### — Mobile & Frontend Frameworks —
 ![Flutter](https://img.shields.io/badge/Flutter-1f1f2e?style=for-the-badge&logo=flutter&logoColor=00F2FE)
+![Android Studio](https://img.shields.io/badge/Android_Studio-1f1f2e?style=for-the-badge&logo=androidstudio&logoColor=00F2FE)
 ![React](https://img.shields.io/badge/React-1f1f2e?style=for-the-badge&logo=react&logoColor=00F2FE)
 ![Next.js](https://img.shields.io/badge/Next.js-1f1f2e?style=for-the-badge&logo=nextdotjs&logoColor=00F2FE)
 ![Vite](https://img.shields.io/badge/Vite-1f1f2e?style=for-the-badge&logo=vite&logoColor=00F2FE)
@@ -64,7 +67,7 @@ class Developer:
 ### — AI, Real-Time Audio & Intelligent Agents —
 ![LiveKit WebRTC](https://img.shields.io/badge/LiveKit_WebRTC-00F2FE?style=for-the-badge&logo=webrtc&logoColor=1f1f2e)
 ![Sarvam AI](https://img.shields.io/badge/Sarvam_AI_STT%2FTTS-00F2FE?style=for-the-badge&logo=openai&logoColor=1f1f2e)
-![LLM Fallback Orchestration](https://img.shields.io/badge/LLM_Fallbacks_Groq%2FGemini-00F2FE?style=for-the-badge&logo=google&logoColor=1f1f2e)
+![LLM Fallbacks](https://img.shields.io/badge/LLM_Fallbacks_Groq%2FGemini-00F2FE?style=for-the-badge&logo=google&logoColor=1f1f2e)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1f1f2e?style=for-the-badge&logo=pytorch&logoColor=00F2FE)
 ![Qdrant Vector DB](https://img.shields.io/badge/Qdrant_Vector_DB-1f1f2e?style=for-the-badge&logo=databricks&logoColor=00F2FE)
 
@@ -85,24 +88,10 @@ class Developer:
 
 ## 🚀 Featured Deployments & Projects
 
-<div align="center">
-
-<a href="https://github.com/ansuman-ai/Voice-Agent">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ansuman-ai&repo=Voice-Agent&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F2FE&icon_color=00F2FE&text_color=c9d1d9&border_radius=12" />
-</a>
-&nbsp;
-<a href="https://github.com/ansuman-ai/scientific-calculator-vault">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ansuman-ai&repo=scientific-calculator-vault&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F2FE&icon_color=00F2FE&text_color=c9d1d9&border_radius=12" />
-</a>
-
-</div>
-
-<br/>
-
 | 🌟 Project | 💡 Purpose & Highlights | 🛠 Tech Stack |
 |:--|:--|:--|
 | [🎙️ **Voice-Agent**](https://github.com/ansuman-ai/Voice-Agent) | Real-time conversational Voice AI Agent with sub-second latency, WebRTC audio resampling, and multi-LLM resilient fallback. | LiveKit, Sarvam AI, Groq, Gemini, Python, React |
-| [🔐 **Scientific Calculator Vault**](https://github.com/ansuman-ai/scientific-calculator-vault) | High-precision scientific computation tool equipped with privacy-preserving cloud vault functionality. | Mobile/Web Application, Modern UI |
+| [🔐 **Scientific Calculator Vault**](https://github.com/ansuman-ai/scientific-calculator-vault) | High-precision scientific computation tool equipped with privacy-preserving cloud vault functionality & APK. | Kotlin, Android SDK, Biometrics, Jetpack Compose |
 
 ---
 
@@ -110,27 +99,12 @@ class Developer:
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=ansuman-ai&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F2FE&icon_color=00F2FE&text_color=c9d1d9&ring_color=00F2FE&count_private=true&include_all_commits=true&border_radius=12" height="175" />
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ansuman-ai&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F2FE&text_color=c9d1d9&border_radius=12" height="175" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ansuman-ai&theme=tokyonight" width="49%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ansuman-ai&theme=tokyonight" width="49%" />
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com/?user=ansuman-ai&theme=tokyonight&hide_border=true&background=0d1117&ring=00F2FE&fire=00F2FE&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00F2FE&sideLabels=00F2FE&dates=8b949e&border_radius=12" width="520" />
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ansuman-ai&bg_color=0d1117&color=00F2FE&line=00F2FE&point=ffffff&area_color=00F2FE&area=true&hide_border=true&radius=12" width="96%" />
-
-</div>
-
----
-
-## 🏆 GitHub Achievements & Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=ansuman-ai&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1&column=7" width="100%" />
+<img src="https://streak-stats.demolab.com/?user=ansuman-ai&theme=tokyonight&hide_border=true&background=0d1117&ring=00F2FE&fire=00F2FE&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00F2FE&sideLabels=00F2FE&dates=8b949e&border_radius=12" width="600" />
 
 </div>
 
