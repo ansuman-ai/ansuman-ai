@@ -1,11 +1,11 @@
 <div align="center">
 
 <!-- Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,14,24&height=220&section=header&text=ANSUMAN%20MOHANTY&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=ansuman-ai%20%E2%80%A2%20Full-Spectrum%20Engineer%20%7C%20AI%20Systems%20%7C%20Mobile%20%26%20Cloud%20Apps&descSize=16&descAlignY=62&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,14,24&height=220&section=header&text=ANSUMAN%20MOHANTY&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=ansuman-ai%20%E2%80%A2%20Full-Spectrum%20Engineer%20%7C%20AI%20Systems%20%7C%20Mobile%20%26amp%3B%20Cloud%20Apps&descSize=16&descAlignY=62&descAlign=50" width="100%"/>
 
 <!-- Typing Animation -->
 <a href="https://github.com/ansuman-ai">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00F2FE&center=true&vCenter=true&width=650&lines=Full-Spectrum+Software+Engineer;Mobile+App+%26+Full-Stack+Architect;Real-Time+AI+Voice+%26+Autonomous+Agents;Building+Scalable+Production+Systems;Learn+%E2%86%92+Architect+%E2%86%92+Deploy+%E2%86%92+Scale" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00F2FE&center=true&vCenter=true&width=650&lines=Full-Spectrum+Software+Engineer;Mobile+App+%26+Full-Stack+Architect;Real-Time+AI+Voice+%26+Autonomous+Agents;Building+Scalable+Production+Systems;Learn+%E2%86%92+Architect+%E2%86%92+Deploy+%E2%86%92+Scale" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -90,6 +90,7 @@ class Developer:
 
 | 🌟 Project | 💡 Purpose & Highlights | 🛠 Tech Stack |
 |:--|:--|:--|
+| [🛡️ **SafeNav - Women Safety**](https://github.com/ansuman-ai/safenav-women-safety) | Safety-aware navigation engine with 20km radar, 38 danger clouds, safe routing, emergency SOS dialing & installable Android APK. | Python, GIS/OSM, Leaflet, Capacitor Android, Docker |
 | [🎙️ **Voice-Agent**](https://github.com/ansuman-ai/Voice-Agent) | Real-time conversational Voice AI Agent with sub-second latency, WebRTC audio resampling, and multi-LLM resilient fallback. | LiveKit, Sarvam AI, Groq, Gemini, Python, React |
 | [🔐 **Scientific Calculator Vault**](https://github.com/ansuman-ai/scientific-calculator-vault) | High-precision scientific computation tool equipped with privacy-preserving cloud vault functionality & APK. | Kotlin, Android SDK, Biometrics, Jetpack Compose |
 
