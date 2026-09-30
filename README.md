@@ -13,7 +13,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-awwnsuman-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/awwnsuman)
 [![Email](https://img.shields.io/badge/Email-ansumanmohanty2006%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ansumanmohanty2006@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-ansuman--ai-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ansuman-ai)
-<img src="https://komarev.com/ghpvc/?username=ansuman-ai&label=PROFILE+VIEWS&style=for-the-badge&color=00F2FE" alt="Profile Views" />
+<img src="https://hits.sh/github.com/ansuman-ai.svg?style=for-the-badge&label=PROFILE+VIEWS&color=00F2FE&labelColor=1f1f2e" alt="Profile Views" />
 
 </div>
 
