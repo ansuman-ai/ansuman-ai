@@ -172,7 +172,7 @@ One continuous Three.js journey driven by GSAP ScrollTrigger: interactive core, 
 <img src="./assets/real-stats.svg" width="80%" alt="Ansu's real stats"/>
 
 <br/><br/>
-<img src="./assets/rescue.svg" width="80%" alt="hoverboard hero catching someone falling from a rooftop"/>
+<img src="./assets/rescue.svg" width="80%" alt="spider-man web rescue: always there to catch you"/>
 
 <br/><br/>
 

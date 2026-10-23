@@ -1,87 +1,394 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 320" width="820" height="320" role="img" aria-label="A hoverboard hero swoops in and catches someone falling from a rooftop">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" width="820" height="480" role="img" aria-label="Spider-Man aesthetic web rescue">
 <defs>
-  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#07060F"/><stop offset="1" stop-color="#1A0F3A"/></linearGradient>
-  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <clipPath id="c"><rect width="820" height="320" rx="18"/></clipPath>
-  <mask id="m"><rect width="820" height="320" fill="#fff"/><circle cx="702" cy="56" r="20" fill="#000"/></mask>
+  <!-- Background sky gradient -->
+  <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#040208"/>
+    <stop offset="45%" stop-color="#0B0518"/>
+    <stop offset="100%" stop-color="#150826"/>
+  </linearGradient>
+
+  <!-- Glowing Moon Gradient -->
+  <radialGradient id="moonGrad" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FAF5FF" stop-opacity="0.95"/>
+    <stop offset="30%" stop-color="#EDE9FE" stop-opacity="0.8"/>
+    <stop offset="60%" stop-color="#C4B5FD" stop-opacity="0.3"/>
+    <stop offset="85%" stop-color="#8B5CF6" stop-opacity="0.1"/>
+    <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- Filters -->
+  <filter id="webGlow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="2.2" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <filter id="moonFilter" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="16" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <filter id="eyeGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <clipPath id="cardClip">
+    <rect width="820" height="480" rx="18"/>
+  </clipPath>
 </defs>
+
 <style>
-  .girl{animation:girl 7s linear infinite}
-  @keyframes girl{
-    0%{transform:translate(140px,112px);opacity:0}
-    5%{opacity:1}
-    24%{transform:translate(140px,112px);animation-timing-function:ease-in}
-    40%{transform:translate(318px,250px);animation-timing-function:ease-in-out}
-    62%{transform:translate(860px,40px);opacity:1}
-    63%,100%{transform:translate(860px,40px);opacity:0}}
-  .spin{transform-box:fill-box;transform-origin:center;animation:spin 7s linear infinite}
-  @keyframes spin{0%,24%{transform:rotate(0)}32%{transform:rotate(-25deg)}40%,100%{transform:rotate(0)}}
-  .hero{animation:hero 7s linear infinite}
-  @keyframes hero{
-    0%,22%{transform:translate(900px,170px);animation-timing-function:ease-out}
-    40%{transform:translate(292px,258px);animation-timing-function:ease-in-out}
-    62%{transform:translate(834px,48px)}
-    63%,100%{transform:translate(900px,-120px)}}
-  .flip{animation:flip 7s steps(1) infinite}
-  @keyframes flip{0%,40%{transform:scaleX(1)}40.1%,100%{transform:scaleX(-1)}}
-  .yell{opacity:0;animation:yell 7s infinite}
-  @keyframes yell{0%,20%{opacity:0}24%,34%{opacity:1}38%,100%{opacity:0}}
-  .heart{opacity:0;transform-box:fill-box;transform-origin:center;animation:heart 7s infinite}
-  @keyframes heart{0%,39%{opacity:0;transform:scale(.2) translateY(0)}44%{opacity:1;transform:scale(1.3) translateY(-6px)}56%{opacity:1;transform:scale(1) translateY(-26px)}62%,100%{opacity:0;transform:scale(1) translateY(-40px)}}
-  .win{animation:win 3s ease-in-out infinite}
-  .w2{animation-delay:1s}.w3{animation-delay:2s}
-  @keyframes win{0%,100%{opacity:.35}50%{opacity:1}}
-  .cap{font:600 15px 'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif;fill:#C9D1D9;letter-spacing:.5px}
-  .say{font:800 16px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#F472B6}
-  @media (prefers-reduced-motion: reduce){*{animation:none!important}.girl{transform:translate(318px,250px)}.hero{transform:translate(292px,258px)}.heart{opacity:1}}
+  /* Natural pendulum sway */
+  .pendulum {
+    transform-origin: 410px 0px;
+    animation: sway 7s ease-in-out infinite;
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-1.5deg); }
+    50% { transform: rotate(1.5deg); }
+  }
+
+  /* Secondary subtle drift on the web catch */
+  .web-drift {
+    transform-origin: 410px 275px;
+    animation: webCatchDrift 7s ease-in-out infinite;
+  }
+  @keyframes webCatchDrift {
+    0%, 100% { transform: rotate(0.8deg) translateY(0px); }
+    50% { transform: rotate(-0.9deg) translateY(2px); }
+  }
+
+  /* Hair wave animation */
+  .hair-wave {
+    animation: hairFlow 3.6s ease-in-out infinite alternate;
+    transform-origin: 365px 330px;
+  }
+  @keyframes hairFlow {
+    0% { transform: skewX(-1.5deg) rotate(-0.5deg); }
+    100% { transform: skewX(2.5deg) rotate(1.5deg); }
+  }
+
+  /* Spidey eyes pulse/blink */
+  .eye-blink {
+    animation: eyePulse 5.5s ease-in-out infinite;
+  }
+  @keyframes eyePulse {
+    0%, 93%, 97%, 100% { opacity: 0.95; }
+    95% { opacity: 0.2; }
+  }
+
+  /* Web shimmer */
+  .web-shimmer {
+    animation: shimmer 3s ease-in-out infinite alternate;
+  }
+  @keyframes shimmer {
+    0% { opacity: 0.85; stroke-width: 1.8px; }
+    100% { opacity: 1; stroke-width: 2.3px; }
+  }
+
+  /* Stars twinkle */
+  .s1 { animation: starTwinkle 3s ease-in-out infinite; }
+  .s2 { animation: starTwinkle 4.5s ease-in-out 1.5s infinite; }
+  @keyframes starTwinkle { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.9; } }
+
+  /* Window lights twinkle */
+  .w1 { animation: winTwinkle 3.2s ease-in-out infinite; }
+  .w2 { animation: winTwinkle 4s ease-in-out 1.6s infinite; }
+  @keyframes winTwinkle { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.95; } }
+
+  /* Caption */
+  .caption {
+    font: 600 13px 'JetBrains Mono', 'Fira Code', 'Segoe UI', monospace;
+    fill: #C9D1D9;
+    letter-spacing: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, .pendulum, .web-drift, .hair-wave { animation: none !important; }
+  }
 </style>
-<g clip-path="url(#c)">
-  <rect width="820" height="320" fill="url(#sky)"/>
-  <circle cx="690" cy="62" r="24" fill="#E9E3FF" mask="url(#m)" filter="url(#glow)"/>
-  <g fill="#C9D1D9">
-    <circle cx="80" cy="40" r="1.2"/><circle cx="240" cy="28" r="1"/><circle cx="420" cy="50" r="1.4"/><circle cx="560" cy="24" r="1"/><circle cx="770" cy="120" r="1.2"/><circle cx="330" cy="90" r="1"/><circle cx="480" cy="110" r="1"/>
+
+<g clip-path="url(#cardClip)">
+  <!-- Card Background -->
+  <rect width="820" height="480" fill="url(#skyGrad)"/>
+  <rect x="0.5" y="0.5" width="819" height="479" rx="18" fill="none" stroke="#7F5AF0" stroke-opacity="0.3"/>
+
+  <!-- Backlight Full Moon Behind Rescue Scene -->
+  <circle cx="410" cy="265" r="195" fill="url(#moonGrad)" filter="url(#moonFilter)"/>
+  <circle cx="410" cy="265" r="145" fill="#FAF5FF" fill-opacity="0.08"/>
+
+  <!-- Distant Stars in Night Sky -->
+  <g fill="#E2E8F0">
+    <circle class="s1" cx="75" cy="50" r="1.2"/>
+    <circle class="s2" cx="130" cy="85" r="0.9"/>
+    <circle class="s1" cx="210" cy="40" r="1.1"/>
+    <circle class="s2" cx="290" cy="70" r="0.8"/>
+    <circle class="s1" cx="540" cy="45" r="1.2"/>
+    <circle class="s2" cx="630" cy="65" r="1"/>
+    <circle class="s1" cx="710" cy="40" r="1.3"/>
+    <circle class="s2" cx="760" cy="95" r="0.8"/>
+    <circle class="s1" cx="105" cy="180" r="0.9"/>
+    <circle class="s2" cx="740" cy="190" r="1.1"/>
   </g>
-  <!-- skyline -->
-  <g fill="#120A2A">
-    <rect x="380" y="170" width="70" height="150"/><rect x="460" y="140" width="56" height="180"/><rect x="530" y="190" width="80" height="130"/><rect x="620" y="150" width="60" height="170"/><rect x="690" y="200" width="130" height="120"/>
+
+  <!-- Distant City Skyline Silhouettes -->
+  <g fill="#070312" opacity="0.85">
+    <path d="M0 480 L0 340 L35 340 L35 310 L75 310 L75 370 L110 370 L110 290 L140 290 L140 260 L150 240 L160 260 L160 380 L200 380 L200 320 L240 320 L240 480 Z"/>
+    <path d="M580 480 L580 330 L620 330 L620 280 L650 280 L650 250 L658 225 L666 250 L690 250 L690 350 L730 350 L730 300 L770 300 L770 360 L820 360 L820 480 Z"/>
   </g>
+  <g fill="#0E061F" opacity="0.95">
+    <rect x="25" y="355" width="45" height="125"/>
+    <rect x="85" y="320" width="55" height="160"/>
+    <rect x="165" y="370" width="45" height="110"/>
+    <rect x="605" y="360" width="50" height="120"/>
+    <rect x="675" y="310" width="60" height="170"/>
+    <rect x="750" y="345" width="50" height="135"/>
+  </g>
+
+  <!-- Twinkling Skyscraper Windows -->
   <g fill="#22D3EE">
-    <rect class="win" x="474" y="160" width="8" height="10"/><rect class="win w2" x="494" y="190" width="8" height="10"/><rect class="win w3" x="640" y="170" width="8" height="10"/><rect class="win" x="548" y="210" width="8" height="10"/><rect class="win w2" x="400" y="190" width="8" height="10"/><rect class="win w3" x="720" y="220" width="8" height="10"/>
+    <rect class="w1" x="98" y="345" width="4" height="6"/>
+    <rect class="w2" x="115" y="370" width="4" height="6"/>
+    <rect class="w1" x="690" y="330" width="4" height="6"/>
+    <rect class="w2" x="715" y="360" width="4" height="6"/>
   </g>
-  <!-- rooftop building -->
-  <rect x="40" y="112" width="140" height="210" fill="#1E1446"/>
-  <rect x="40" y="108" width="140" height="6" fill="#7F5AF0"/>
-  <g fill="#F472B6" opacity=".7"><rect x="62" y="140" width="10" height="12"/><rect x="96" y="170" width="10" height="12"/><rect x="130" y="140" width="10" height="12"/><rect x="62" y="200" width="10" height="12"/><rect x="130" y="230" width="10" height="12"/></g>
+  <g fill="#F472B6">
+    <rect class="w2" x="42" y="380" width="4" height="5"/>
+    <rect class="w1" x="620" y="385" width="4" height="5"/>
+  </g>
 
-  <text class="say yell" x="160" y="58">AAAH!</text>
+  <!-- ==================== SWINGING PENDULUM HERO RESCUE ==================== -->
+  <g class="pendulum">
+    <!-- Top Web Line -->
+    <line class="web-shimmer" x1="410" y1="0" x2="410" y2="70" stroke="#FFFFFF" stroke-width="2" filter="url(#webGlow)"/>
 
-  <!-- falling person -->
-  <g class="girl"><g class="spin">
-    <line x1="-4" y1="-18" x2="-6" y2="0" stroke="#E6EDF3" stroke-width="3" stroke-linecap="round"/>
-    <line x1="4" y1="-18" x2="6" y2="0" stroke="#E6EDF3" stroke-width="3" stroke-linecap="round"/>
-    <path d="M-11 -15 L11 -15 L6 -34 L-6 -34 Z" fill="#F472B6"/>
-    <line x1="-6" y1="-32" x2="-14" y2="-44" stroke="#F5D0B5" stroke-width="3" stroke-linecap="round"/>
-    <line x1="6" y1="-32" x2="14" y2="-44" stroke="#F5D0B5" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="0" cy="-42" r="8" fill="#F5D0B5"/>
-    <path d="M-9 -42 Q-9 -53 0 -53 Q9 -53 9 -42 Q6 -48 0 -48 Q-6 -48 -9 -42 Z" fill="#3B2A6B"/>
-    <circle cx="7" cy="-51" r="4" fill="#3B2A6B"/>
-  </g></g>
+    <!-- Web line coiling around top anchor -->
+    <path d="M410 30 Q414 38 411 46 Q407 54 411 62 Q414 70 411 78 Q407 86 410 94" 
+          stroke="#E0F2FE" stroke-width="1.3" fill="none" opacity="0.95"/>
 
-  <!-- hero on hoverboard -->
-  <g class="hero"><g class="flip">
-    <ellipse cx="0" cy="10" rx="26" ry="5" fill="#22D3EE" opacity=".35" filter="url(#glow)"/>
-    <path d="M6 -42 Q30 -34 30 -12 L8 -22 Z" fill="#F472B6"/>
-    <line x1="-5" y1="-20" x2="-7" y2="0" stroke="#E6EDF3" stroke-width="3.5" stroke-linecap="round"/>
-    <line x1="5" y1="-20" x2="7" y2="0" stroke="#E6EDF3" stroke-width="3.5" stroke-linecap="round"/>
-    <rect x="-11" y="-44" width="22" height="26" rx="7" fill="#7F5AF0"/>
-    <line x1="-9" y1="-38" x2="-20" y2="-46" stroke="#7F5AF0" stroke-width="5" stroke-linecap="round"/>
-    <circle cx="0" cy="-54" r="10" fill="#F5D0B5"/>
-    <path d="M-10 -55 Q-10 -66 0 -66 Q10 -66 10 -55 Q4 -61 -2 -60 Q-7 -59 -10 -55 Z" fill="#1E1446"/>
-    <rect x="-10" y="-58" width="20" height="6" rx="3" fill="#22D3EE" filter="url(#glow)"/>
-    <rect x="-26" y="0" width="52" height="6" rx="3" fill="#22D3EE" filter="url(#glow)"/>
-  </g></g>
+    <!-- ==================== SPIDER-MAN (ANATOMICALLY ACCURATE SILHOUETTE) ==================== -->
+    <g id="spiderman">
+      <!-- 1. Left Leg (straight along web rope) -->
+      <path d="
+        M409 46
+        C412 48, 413 54, 412 62
+        C411 70, 411 78, 410 86
+        C409 94, 408 101, 407 106
+        C404 105, 402 98, 403 90
+        C404 80, 405 70, 406 58
+        C407 50, 408 46, 409 46
+        Z" 
+        fill="#070310" stroke="#22D3EE" stroke-width="0.8" stroke-opacity="0.7"/>
 
-  <text class="heart" x="296" y="196" font-size="26">💜</text>
-  <text x="410" y="300" text-anchor="middle" class="cap">always there to catch you ✦</text>
+      <!-- 2. Right Leg (bent dynamically out to the right like ninja pose) -->
+      <path d="
+        M408 106
+        C412 105, 420 107, 427 111
+        C433 114, 437 119, 436 123
+        C435 125, 431 123, 427 119
+        C423 115, 417 111, 411 110
+        /* Knee & Calf bending down and back */
+        M436 122
+        C437 127, 434 135, 430 143
+        C427 149, 424 154, 421 157
+        C419 158, 418 156, 420 151
+        C423 145, 427 138, 430 131
+        C432 126, 434 123, 436 122
+        Z" 
+        fill="#070310" stroke="#22D3EE" stroke-width="0.8" stroke-opacity="0.7"/>
+      <!-- Join the right leg cleanly -->
+      <polygon points="408,106 436,122 432,126 421,157 418,154 427,130 411,110" 
+               fill="#070310" stroke="#22D3EE" stroke-width="0.8" stroke-opacity="0.7"/>
+
+      <!-- 3. Upside-Down Torso (V-Taper) -->
+      <path d="
+        M406 106
+        C410 106, 413 108, 413 114
+        C414 122, 417 132, 419 141
+        C415 143, 411 144, 408 144
+        C404 144, 401 143, 397 141
+        C399 132, 402 122, 403 114
+        C403 108, 404 106, 406 106
+        Z" 
+        fill="#070310" stroke="#22D3EE" stroke-width="0.8" stroke-opacity="0.7"/>
+
+      <!-- 4. Left Arm (reaching UP along the web line) -->
+      <path d="
+        M397 140
+        C393 135, 389 127, 387 118
+        C385 109, 387 100, 391 93
+        C394 88, 399 84, 403 82
+        C405 83, 404 87, 402 90
+        C398 96, 395 103, 394 111
+        C394 119, 397 126, 400 132
+        Z" 
+        fill="#070310" stroke="#22D3EE" stroke-width="0.8" stroke-opacity="0.7"/>
+
+      <!-- 5. Right Arm (reaching DOWN holding the lower web line) -->
+      <path d="
+        M418 141
+        C422 147, 423 154, 421 161
+        C419 167, 416 174, 413 180
+        C410 183, 408 183, 407 180
+        C408 175, 411 169, 413 163
+        C415 157, 415 151, 412 145
+        Z" 
+        fill="#070310" stroke="#22D3EE" stroke-width="0.8" stroke-opacity="0.7"/>
+
+      <!-- 6. Upside-Down Masked Head -->
+      <ellipse cx="408" cy="158" rx="8.5" ry="11" fill="#070310" stroke="#22D3EE" stroke-width="0.9" stroke-opacity="0.75"/>
+
+      <!-- 7. Sharp Angular Spider-Man Eyes (White with Cyan Glow) -->
+      <g class="eye-blink" filter="url(#eyeGlow)">
+        <!-- Left eye (angular comic lens) -->
+        <polygon points="403,158 407,155 408,161 404,162" fill="#FFFFFF" stroke="#22D3EE" stroke-width="0.7"/>
+        <!-- Right eye -->
+        <polygon points="410,161 411,155 415,158 414,162" fill="#FFFFFF" stroke="#22D3EE" stroke-width="0.7"/>
+      </g>
+    </g>
+
+    <!-- ==================== TENSION WEB STRAND ==================== -->
+    <line class="web-shimmer" x1="410" y1="180" x2="410" y2="275" stroke="#FFFFFF" stroke-width="2.2" filter="url(#webGlow)"/>
+
+    <!-- Woven spiral threads wrapping around tension line -->
+    <path d="
+      M410 182
+      Q415 190 410 198 Q405 206 410 214
+      Q415 222 410 230 Q405 238 410 246
+      Q415 254 410 262 Q405 270 410 275" 
+      stroke="#E0F2FE" stroke-width="1.4" fill="none" opacity="0.95"/>
+
+    <!-- ==================== SPIDERWEB NET CRADLE ==================== -->
+    <g id="spiderweb-cradle" stroke="#E0F2FE" stroke-linecap="round" filter="url(#webGlow)">
+      <!-- Radial spokes -->
+      <line x1="410" y1="275" x2="365" y2="310" stroke-width="1.8" opacity="0.95"/>
+      <line x1="410" y1="275" x2="382" y2="315" stroke-width="1.8" opacity="0.95"/>
+      <line x1="410" y1="275" x2="400" y2="318" stroke-width="1.8" opacity="0.95"/>
+      <line x1="410" y1="275" x2="420" y2="318" stroke-width="1.8" opacity="0.95"/>
+      <line x1="410" y1="275" x2="438" y2="315" stroke-width="1.8" opacity="0.95"/>
+      <line x1="410" y1="275" x2="455" y2="310" stroke-width="1.8" opacity="0.95"/>
+
+      <!-- Connecting catenary arcs -->
+      <path d="M392 288 Q401 292 410 292 Q419 292 428 288" stroke-width="1.3" fill="none" opacity="0.9"/>
+      <path d="M380 299 Q395 304 410 304 Q425 304 440 299" stroke-width="1.4" fill="none" opacity="0.95"/>
+      <path d="M365 310 Q388 317 410 317 Q432 317 455 310" stroke-width="1.6" fill="none" opacity="1"/>
+      <path d="M382 315 Q401 321 420 318" stroke-width="1.4" fill="none" opacity="0.95"/>
+    </g>
+
+    <!-- ==================== THE FALLING GIRL (GWEN / MJ) ==================== -->
+    <g class="web-drift" id="girl">
+      <!-- 1. Arched Body (Chest & Back resting in web cradle) -->
+      <path d="
+        M375 322
+        C382 318, 392 314, 404 312
+        C414 311, 423 313, 431 317
+        C437 321, 442 327, 444 334
+        C445 342, 444 350, 440 356
+        C435 360, 428 360, 422 355
+        C418 350, 414 342, 411 334
+        C407 330, 401 328, 396 329
+        C390 330, 385 334, 381 340
+        C378 344, 375 342, 374 338
+        C373 332, 373 326, 375 322
+        Z"
+        fill="#070310" stroke="#F472B6" stroke-width="0.9" stroke-opacity="0.75"/>
+
+      <!-- 2. Head tilted backward -->
+      <path d="M375 324 C372 320, 368 316, 363 316 C358 317, 355 321, 356 326 C357 331, 362 334, 367 335 C372 335, 375 331, 375 324 Z" 
+            fill="#070310" stroke="#F472B6" stroke-width="0.8" stroke-opacity="0.6"/>
+
+      <!-- 3. Dangling Left Arm -->
+      <path d="M396 329 C395 338, 393 348, 391 358 C389 367, 387 375, 386 381 C384 384, 382 384, 382 380 C383 372, 386 362, 388 352 C390 342, 393 333, 396 329 Z" 
+            fill="#070310" stroke="#F472B6" stroke-width="0.7" stroke-opacity="0.5"/>
+
+      <!-- 4. Fluttering Dress / Skirt Folds -->
+      <path d="
+        M424 335
+        C429 344, 433 355, 435 367
+        C433 366, 429 361, 426 353
+        C424 361, 421 369, 418 375
+        C416 374, 414 368, 414 361
+        C412 368, 409 374, 406 379
+        C404 378, 403 372, 404 365
+        C406 355, 409 344, 413 334
+        Z"
+        fill="#070310" stroke="#F472B6" stroke-width="0.8" stroke-opacity="0.6"/>
+
+      <!-- 5. Slender Dancer Legs (Graceful Taper & Pointed Balletic Toes) -->
+      <!-- Right Leg (foreground) -->
+      <path d="
+        M442 332
+        C445 342, 448 354, 450 367
+        C452 379, 453 392, 451 404
+        C450 410, 448 414, 446 414
+        C444 412, 443 407, 443 400
+        C443 391, 442 380, 440 369
+        C437 357, 435 345, 433 334
+        Z"
+        fill="#070310" stroke="#F472B6" stroke-width="0.8" stroke-opacity="0.75"/>
+
+      <!-- Left Leg (background) -->
+      <path d="
+        M434 338
+        C436 348, 438 360, 439 372
+        C440 384, 439 396, 437 407
+        C436 411, 434 413, 432 411
+        C431 407, 431 400, 432 392
+        C433 382, 433 371, 431 360
+        C429 350, 426 341, 424 335
+        Z"
+        fill="#070310" stroke="#F472B6" stroke-width="0.7" stroke-opacity="0.5"/>
+
+      <!-- 6. Long Tumbling Hair (Voluminous locks cascading on the left) -->
+      <g class="hair-wave" fill="#070310">
+        <!-- Main thick cascade -->
+        <path d="
+          M362 324
+          C358 335, 354 348, 351 362
+          C348 376, 348 391, 351 405
+          C353 414, 357 423, 360 430
+          C359 427, 357 420, 356 413
+          C354 399, 354 385, 356 371
+          C359 357, 363 344, 368 331
+          Z" stroke="#A78BFA" stroke-width="0.7" stroke-opacity="0.6"/>
+
+        <!-- Middle lock -->
+        <path d="
+          M367 328
+          C365 340, 363 354, 364 368
+          C365 382, 368 396, 373 410
+          C375 417, 378 424, 379 430
+          C377 425, 375 418, 373 409
+          C370 395, 368 381, 368 367
+          C368 353, 370 340, 374 329
+          Z" opacity="0.95"/>
+
+        <!-- Third lock -->
+        <path d="
+          M372 332
+          C373 345, 374 359, 376 373
+          C378 386, 382 400, 386 413
+          C384 409, 382 402, 380 394
+          C377 381, 375 367, 374 354
+          C373 342, 372 334, 371 331
+          Z" opacity="0.9"/>
+      </g>
+    </g>
+  </g>
+  <!-- ==================== END RESCUE GROUP ==================== -->
+
+  <!-- Soft Bottom Vignette Fade -->
+  <rect x="0" y="440" width="820" height="40" fill="url(#skyGrad)" opacity="0.5"/>
+
+  <!-- Aesthetic Minimalist Caption & Star Accent -->
+  <g transform="translate(410, 464)">
+    <text text-anchor="middle" class="caption">"I'll always catch you." ✦</text>
+  </g>
 </g>
 </svg>
