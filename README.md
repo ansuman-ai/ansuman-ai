@@ -69,7 +69,20 @@ loop:     learn → build → break → fix → ship
 
 <table>
 <tr>
-<td width="33%" valign="top" align="center">
+<td width="50%" valign="top" align="center">
+
+### 🛰️ Space Track
+<sub>SPACEBORNE FLOOD & DEBRIS ASSESSMENT</sub>
+
+Rapid flood and debris damage mapping from satellite imagery, built for the Trishuli, Nepal flood (Copernicus EMSR927) at Multimodal AI Hackathon 2026.
+
+<img src="https://img.shields.io/badge/Multimodal_AI-0D1117?logoColor=22D3EE"/>
+<img src="https://img.shields.io/badge/Copernicus_EMS-0D1117?logoColor=A78BFA"/>
+
+[**→ repo**](https://github.com/ansuman-ai/space-track)
+
+</td>
+<td width="50%" valign="top" align="center">
 
 ### 🎙️ Voice-Agent
 <sub>REAL-TIME CONVERSATIONAL AI</sub>
@@ -79,10 +92,12 @@ Low-latency voice agent over WebRTC with Sarvam STT/TTS and multi-LLM fallback, 
 <img src="https://img.shields.io/badge/Python-0D1117?logo=python&logoColor=22D3EE"/>
 <img src="https://img.shields.io/badge/LiveKit-0D1117?logo=webrtc&logoColor=A78BFA"/>
 
-[**→ repo**](https://github.com/ansuman-ai/Voice-Agent)
+🔒 <sub>private repo · demo on request</sub>
 
 </td>
-<td width="33%" valign="top" align="center">
+</tr>
+<tr>
+<td width="50%" valign="top" align="center">
 
 ### 🛡️ SafeNav
 <sub>WOMEN-SAFETY NAVIGATION</sub>
@@ -92,10 +107,10 @@ Safety-aware routing with a 20 km danger radar, safe-path suggestions and one-ta
 <img src="https://img.shields.io/badge/Python-0D1117?logo=python&logoColor=22D3EE"/>
 <img src="https://img.shields.io/badge/Leaflet-0D1117?logo=leaflet&logoColor=A78BFA"/>
 
-[**→ repo**](https://github.com/ansuman-ai/safenav-women-safety)
+🔒 <sub>private repo · demo on request</sub>
 
 </td>
-<td width="33%" valign="top" align="center">
+<td width="50%" valign="top" align="center">
 
 ### 🌌 Digital Universe
 <sub>3D SCROLL EXPERIENCE · TECHFEST</sub>
@@ -105,7 +120,7 @@ One continuous Three.js journey driven by GSAP ScrollTrigger: interactive core, 
 <img src="https://img.shields.io/badge/Three.js-0D1117?logo=threedotjs&logoColor=22D3EE"/>
 <img src="https://img.shields.io/badge/GSAP-0D1117?logo=greensock&logoColor=F472B6"/>
 
-[**→ repo**](https://github.com/ansuman-ai/cyborg_3d)
+🔒 <sub>private repo · demo on request</sub>
 
 </td>
 </tr>
@@ -116,12 +131,12 @@ One continuous Three.js journey driven by GSAP ScrollTrigger: interactive core, 
 
 <div align="center">
 
-| Project | What it is | Links |
+| Project | What it is | Access |
 |:--|:--|:--|
-| 🔐 **Calc Vault** | Scientific calculator that secretly doubles as a biometric-locked vault | [repo](https://github.com/ansuman-ai/scientific-calculator-vault) |
-| ✨ **Interactive** | Interactive web experience built with vanilla JS | [repo](https://github.com/ansuman-ai/Interactive) · [![Live](https://img.shields.io/badge/LIVE-22D3EE?style=flat-square&logo=vercel&logoColor=0D1117)](https://interactive1-eosin.vercel.app) |
-| 🤖 **Cyborg** | Cyborg-themed web UI experiment | [repo](https://github.com/ansuman-ai/cyborg) |
-| 💡 **Ideate Landing** | Landing page design for Ideate | [repo](https://github.com/ansuman-ai/Ideate_landing) |
+| ✨ **Interactive** | Interactive web experience built with vanilla JS | [![Live](https://img.shields.io/badge/LIVE_DEMO-22D3EE?style=flat-square&logo=vercel&logoColor=0D1117)](https://interactive1-eosin.vercel.app) |
+| 🔐 **Calc Vault** | Scientific calculator that secretly doubles as a biometric-locked vault | 🔒 private · demo on request |
+| 🤖 **Cyborg** | Cyborg-themed web UI experiment | 🔒 private |
+| 💡 **Ideate Landing** | Landing page design for Ideate | 🔒 private |
 
 </div>
 
