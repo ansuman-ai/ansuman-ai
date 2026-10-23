@@ -165,6 +165,28 @@ One continuous Three.js journey driven by GSAP ScrollTrigger: interactive core, 
 
 </div>
 
+<!-- ═════════════ FUN ═════════════ -->
+<img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=F472B6&text=off%20the%20record&height=90&fontSize=38&desc=stats%20my%20recruiter%20shouldn%27t%20see&descSize=14&descAlignY=80&fontAlignY=42&animation=fadeIn" width="100%"/>
+
+<div align="center">
+
+<img src="./assets/real-stats.svg" width="80%" alt="Ansu's real stats"/>
+
+<br/><br/>
+<img src="./assets/rescue.svg" width="80%" alt="hoverboard hero catching someone falling from a rooftop"/>
+
+<br/><br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=2600&pause=1200&color=F472B6&center=true&vCenter=true&width=560&lines=%24+git+commit+-m+%22final_final_v3_REAL%22;it+works+on+my+machine+%F0%9F%A4%B7;%2F%2F+TODO%3A+fix+later+(written+in+1st+sem);deadline+in+2+hours%3F+perfect%2C+time+to+start" alt="dev life"/>
+
+<br/>
+
+<img src="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%230D1117&textColor=%23C9D1D9&qColor=%23A78BFA&aColor=%2322D3EE" alt="random dev joke"/>
+
+</div>
+
+<img src="./assets/divider.svg" width="100%"/>
+
 <!-- ═════════════ ROADMAP ═════════════ -->
 <details>
 <summary><b>🧭 &nbsp;what I'm working towards</b></summary>
